@@ -1,19 +1,21 @@
 import java.util.Scanner;
 
-public class tabuada {
+public class verificarMaiorNumDigitado {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
+		int maior = 0;
 		
-		System.out.println("Digite um número: ");
-		int num = entrada.nextInt();
-		
-		System.out.println("Tabuada do " + num);
-		for (int i = 1; i <= 10; i++) {
-			int res = num * i;
-			System.out.println(num + " x " + i + " = " + res);			
+		for (int i = 1; i <= 5; i++) {
+			System.out.println("Digite o " + i +"º valor:" );
+			int num = entrada.nextInt();
+			
+			if (num > maior) {
+				maior = num;
+			}
 		}
-
+		
+		System.out.println("O maior valor digitado foi: " + maior);
 	}
 
 }
