@@ -34,6 +34,11 @@ public class verificarQtdMaioridade {
 				somarMaioridade = somarMaioridade + 1;
 			}
 		}
+
+		System.out.println("Idades digitadas: ");
+		for (int idade : idades) {
+			System.out.println(idade);
+		}
 		
 		System.out.println("O total de pessoas na maioridade é " + somarMaioridade);
 
